@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+
+.model img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.model {
+    width: 480px;
+    height: 430px;
+    transition: all 1s ease;
+}
+
+.model:hover {
+    transition: all 1s ease;
+    transform: scale(1.05);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text {
+    width: 500px;
+}
+
+.main-text h1 {
+    font-size: 3.4em;
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.main-text p {
+    color: #747474;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 98%;
+    left: 52%;
+    /*left: 42%*/
+    transform: translate(-80%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-menu ul {
+    position: relative;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social-menu ul li .fab,
+.social-menu ul li .fas {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+
+.social-menu ul li .fab:hover,
+.social-menu ul li .fas:hover {
+    color: #ffffff;
+    transition: .2s ease;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+}
+
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    /* Linkedin */
+    background-color: #0e76a8;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    /* Twitter */
+    background-color: #00acee;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    /* Skype */
+    background-color: #00aff0;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    /* Whatsapp */
+    background-color: #4FCE5D;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
+    /* Facebook */
+    background-color: #3b5998;
+}
+
+
+/* .social-menu ul li:nth-child(6) a:hover {
+    --- Phone
+    background-color: #a7cd1f;
+} */
+
+.btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 49px;
+    transition: all .5s ease;
+    font-weight: 50;
+}
+
+.btn:hover {
+    transition: all .5s ease;
+    transform: scale(1.05);
+    border-radius: 49px;
+    color: #fff;
+    background-color: #9e9e9e;
+}
+
+nav .menu-btn,
+.menu-icon {
+    display: none;
+}
+
+@media(max-width:1140px) {
+    .content {
+        width: 100%;
+    }
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+    .main-text,
+    .model {
+        margin: 10px;
+    }
+    .main-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:900px) {
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:720px) {
+    .model {
+        align-items: center;
+        width: 400px;
+        height: 400px;
+    }
+    .main-text {
+        text-align: center;
+        width: 70%;
+        position: absolute;
+        left: 52%;
+        top: 150%;
+        transform: translate(-50%, -50%);
+    }
+    .social-menu ul {
+        left: 45%;
+        text-align: center;
+    }
+}
