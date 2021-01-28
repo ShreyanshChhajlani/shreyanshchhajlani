@@ -1,16 +1,16 @@
 <?php
 
-if(isset($_POST['fromEmail']) && ($_POST['fromEmail'] != ""))
+if(isset($_GET['fromEmail']) && ($_GET['fromEmail'] != ""))
 {
-    if(filter_var($_POST['fromEmail'], FILTER_VALIDATE_EMAIL))
+    if(filter_var($_GET['fromEmail'], FILTER_VALIDATE_EMAIL))
     {
     
-        if (isset($_POST['sendMailBtn'])) {
-            $fromEmail = $_POST['fromEmail'];
+        if (isset($_GET['sendMailBtn'])) {
+            $fromEmail = $_GET['fromEmail'];
             $toEmail = "shreyanshchhajlani2000@gmail.com";
-            $username = $_POST['name'];
+            $username = $_GET['name'];
             $subjectName = "Feedback through Portfolio";
-            $message = $_POST['message'];
+            $message = $_GET['message'];
         
             $to = $toEmail;
             $subject = $subjectName;
